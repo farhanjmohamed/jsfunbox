@@ -14,6 +14,17 @@
   }
 }
 
+@keyframes textFadeLoop {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
+
 .animated-gradient {
   background-size: 200% 200%;
   background-image: linear-gradient(
@@ -23,4 +34,22 @@
     #2c6efd  /* blue-600 */
   );
   animation: gradientBG 5s ease infinite;
+}
+
+
+.animated-title-loop {
+  font-size: 15rem; /* Adjust font size as needed */
+  color: transparent;
+  background-image: linear-gradient(90deg, white 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari */
+  animation: textFadeLoop 2s ease 1;
+}
+
+.choices button {
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
 }
