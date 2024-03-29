@@ -6,26 +6,90 @@ export function Home() {
       <p className="text-gray-50 font-black text-center text-[15rem] pt-10 pb-5 animated-title-loop">
         GAMES
       </p>
-      <div className="grid grid-cols-3 auto-rows-auto text-center pt-20 gap-10">
+      <div className="grid grid-cols-3 auto-rows-auto text-center p-20 gap-20">
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Rock Paper Scissors</p>
           <a href="/rps">
             <img src={rsb} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">
-          Space Invaders
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Space Invaders</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
         </div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Flappy Bird</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">2048</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Sudoku</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Hello</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Connect 4</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Tic Tac Toe</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Minesweeper</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Match Em Up</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Snake</div>
-        <div className="bg-white w-[25rem] h-[25rem] mx-auto">Breakout</div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Flappy Bird</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">2048</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Sudoku</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Ello</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Connect 4</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Tic Tac Toe</p>
+          <a href="/tictactoe">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Minesweeper</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Match Em Up</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Snake</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Breakout</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+      </div>
+      <div className="p-2 w-screen bg-purple-400 text-center font-bold text-2xl text-gray-50">
+        <a href="/">Splash</a>
       </div>
     </div>
   );
