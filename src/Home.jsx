@@ -41,7 +41,7 @@ export function Home() {
           </a>
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
-          <p className="text-2xl font-black pt-5 pb-5">Ello</p>
+          <p className="text-2xl font-black pt-5 pb-5">Doodle Jump</p>
           <a href="">
             <img className="h-60 w-auto mx-auto pb-5" />
           </a>
@@ -83,6 +83,27 @@ export function Home() {
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Breakout</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Candy Crush</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Black Jack</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Dino Run</p>
           <a href="">
             <img className="h-60 w-auto mx-auto pb-5" />
           </a>
