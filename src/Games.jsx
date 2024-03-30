@@ -1,6 +1,6 @@
 import rsb from "./Assets/roshambo.jpg";
 
-export function Home() {
+export function Games() {
   return (
     <div className="w-screen h-auto min-h-screen bg-gradient-to-b from-yellow-400 via-purple-400 to-blue-500">
       <p className="text-gray-50 font-black text-center text-[15rem] pt-10 pb-5 animated-title-loop">
@@ -104,6 +104,25 @@ export function Home() {
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Dino Run</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Pong</p>
+          <a href="">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Guess The Number</p>
+          <a href="/guessthenumber">
+            <img className="h-60 w-auto mx-auto pb-5" />
+          </a>
+        </div>
+        <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
+          <p className="text-2xl font-black pt-5 pb-5">Whack A Mole</p>
           <a href="">
             <img className="h-60 w-auto mx-auto pb-5" />
           </a>
