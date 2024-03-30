@@ -4,6 +4,7 @@ import { Games } from "./Games";
 import { Roshambo } from "./Roshambo";
 import { TicTacToe } from "./TicTacToe";
 import { GuessNum } from "./GuessNum";
+import { TwentyFortyEight } from "./TwentyFortyEight";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/rps" element={<Roshambo />} />
           <Route path="/tictactoe" element={<TicTacToe />} />
           <Route path="/guessthenumber" element={<GuessNum />} />
+          <Route path="/2048" element={<TwentyFortyEight />} />
         </Routes>
       </BrowserRouter>
     </>

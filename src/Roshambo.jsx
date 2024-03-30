@@ -37,9 +37,9 @@ export function Roshambo() {
 
   return (
     <div className="bg-green-400 w-screen min-h-screen h-auto">
-      <a href="/games" className="font-bold pl-5 pt-5 text-2xl">
-        Home
-      </a>
+      <div className="font-bold pl-5 pt-5 text-2xl">
+        <a href="/games">Home</a>
+      </div>
       <p
         className="text-[8rem] font-black text-center text-gray-50 pt-28
       "

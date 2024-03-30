@@ -29,7 +29,7 @@ export function Games() {
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">2048</p>
-          <a href="">
+          <a href="/2048">
             <img className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
