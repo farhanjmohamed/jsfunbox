@@ -44,7 +44,7 @@ export function GuessNum() {
 
   return (
     <>
-      <div className="w-screen min-h-screen  bg-orange-200">
+      <div className="w-screen min-h-screen  bg-[#00FFFF]">
         <div className="font-black text-2xl pl-5 pt-5">
           <a href="/games">Home</a>
         </div>
@@ -67,7 +67,7 @@ export function GuessNum() {
             />
             <br />
             <button
-              className="mt-5 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 rounded disabled:opacity-50"
+              className="mt-5 bg-white border-black text-black font-bold py-2 px-4 rounded disabled:opacity-50"
               onClick={checkGuess}
               disabled={gameStatus !== ""}
             >

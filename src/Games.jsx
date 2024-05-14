@@ -1,4 +1,6 @@
 import rsb from "./Assets/roshambo.jpg";
+import ttt from "./Assets/tictactoe.png";
+import gtn from "./Assets/guessnum.png";
 
 export function Games() {
   return (
@@ -56,7 +58,7 @@ export function Games() {
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Tic Tac Toe</p>
           <a href="/tictactoe">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={ttt} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
 
@@ -118,7 +120,7 @@ export function Games() {
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Guess The Number</p>
           <a href="/guessthenumber">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={gtn} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
