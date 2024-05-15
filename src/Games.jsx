@@ -1,6 +1,11 @@
-import rsb from "./Assets/roshambo.jpg";
+import rps from "./Assets/rps.png";
 import ttt from "./Assets/tictactoe.png";
 import gtn from "./Assets/guessnum.png";
+import flappybird from "./Assets/frappyburd.png";
+import invader from "./Assets/invader.png";
+import twen from "./Assets/2048.png";
+import connect from "./Assets/connect4.png";
+import sud from "./Assets/sudoku.png";
 
 export function Games() {
   return (
@@ -12,34 +17,34 @@ export function Games() {
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Rock Paper Scissors</p>
           <a href="/rps">
-            <img src={rsb} className="h-60 w-auto mx-auto pb-5" />
+            <img src={rps} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Space Invaders</p>
           <a href="">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={invader} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Flappy Bird</p>
-          <a href="">
-            <img className="h-60 w-auto mx-auto pb-5" />
+          <a href="/flappybird">
+            <img src={flappybird} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">2048</p>
           <a href="/2048">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={twen} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Sudoku</p>
           <a href="">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={sud} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
@@ -52,7 +57,7 @@ export function Games() {
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Connect 4</p>
           <a href="">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={connect} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
@@ -78,7 +83,7 @@ export function Games() {
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Snake</p>
-          <a href="">
+          <a href="/snake">
             <img className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>

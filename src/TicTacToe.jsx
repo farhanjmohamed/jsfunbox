@@ -22,12 +22,12 @@ export function TicTacToe() {
 
   useEffect(() => {
     checkWinner();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [options]);
 
   const handleCellClick = (index) => {
     if (options[index] !== "" || !running) return;
-    count++;
-    setTurnCount(count);
+
     const newOptions = [...options];
     newOptions[index] = currentPlayer;
     setOptions(newOptions);
@@ -71,11 +71,11 @@ export function TicTacToe() {
   };
 
   return (
-    <div className="h-auto min-h-screen w-screen bg-[#F8AD9D]">
+    <div className="h-auto min-h-screen w-screen bg-[#F8AD9D] p-2 pb-10">
       <a className="text-2xl font-black text-white pl-2" href="/games">
         Home
       </a>
-      <div className="text-center font-black text-white text-5xl mt-10">
+      <div className="text-center font-black text-white text-[10rem] mt-10">
         Tic Tac Toe
       </div>
       <div
@@ -115,7 +115,12 @@ export function TicTacToe() {
         {options.map((cell, index) => (
           <div
             key={index}
-            onClick={() => handleCellClick(index)}
+            onClick={() => {
+              handleCellClick(index);
+              count++;
+              console.log(count);
+              setTurnCount(count);
+            }}
             className="cell w-18 h-18 border-2 leading-[8rem] text-[8rem] flex items-center justify-center cursor-pointer bg-[#FFDAB9] font-bold text-white text-2xl"
           >
             {cell}
@@ -130,7 +135,7 @@ export function TicTacToe() {
             count = 0;
             setTurnCount(count);
           }}
-          className="bg-white text-black px-4 py-2 rounded mt-10 font-bold"
+          className="bg-[#FFDAB9] text-black px-4 py-2 rounded-md mt-10 font-bold"
         >
           Restart
         </button>

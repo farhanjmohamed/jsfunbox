@@ -23,7 +23,10 @@
   }
 }
 
-
+@keyframes block{
+  0%{left: 400px}
+  100%{left: -50px}
+}
 
 .animated-gradient {
   background-size: 200% 200%;
@@ -36,6 +39,9 @@
   animation: gradientBG 5s ease infinite;
 }
 
+.animated-pipe {
+  animation: block 2s infinite linear;
+}
 
 .animated-title-loop {
   font-size: 15rem; /* Adjust font size as needed */
