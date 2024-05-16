@@ -4,6 +4,8 @@ export function FlappyBird() {
   const [topProp, setTopProp] = useState(200);
   const [isGameOver, setIsGameOver] = useState(false);
   const [velocity, setVelocity] = useState(0);
+  const [score, setScore] = useState(0);
+  const [blockPassed, setBlockPassed] = useState(false);
   const characterRef = useRef(null);
   const blockRef = useRef(null);
   const holeRef = useRef(null);
@@ -53,7 +55,12 @@ export function FlappyBird() {
         ) {
           setIsGameOver(true);
           clearInterval(interval);
+        } else {
+          setBlockPassed(true);
         }
+      } else if (blockLeft + block.offsetWidth < characterLeft && blockPassed) {
+        setScore((prevScore) => prevScore + 1);
+        setBlockPassed(false);
       }
     }, 20);
 
@@ -69,7 +76,7 @@ export function FlappyBird() {
       clearInterval(interval);
       window.removeEventListener("keydown", handleSpacebarPress);
     };
-  }, [isGameOver, velocity]);
+  }, [isGameOver, velocity, blockPassed]);
 
   const jump = () => {
     setVelocity(-8);
@@ -79,6 +86,8 @@ export function FlappyBird() {
     setTopProp(200);
     setIsGameOver(false);
     setVelocity(0);
+    setScore(0);
+    setBlockPassed(false);
     const character = characterRef.current;
     character.style.top = "200px";
   };
@@ -91,7 +100,10 @@ export function FlappyBird() {
       <p className="font-extrabold text-5xl text-center text-yellow-200 pt-10">
         Flappy Bird
       </p>
-      <div className="pt-28">
+      <p className="font-bold pt-5 text-3xl text-center text-white">
+        Score: {score}
+      </p>
+      <div className="pt-20">
         <div
           id="game"
           className="w-[400px] h-[500px] border-2 mx-auto overflow-hidden relative"
