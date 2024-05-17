@@ -24,7 +24,7 @@ export function Games() {
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Space Invaders</p>
-          <a href="">
+          <a href="/spaceinvaders">
             <img src={invader} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>

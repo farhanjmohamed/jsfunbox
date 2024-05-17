@@ -7,6 +7,7 @@ import { GuessNum } from "./GuessNum";
 import { TwentyFortyEight } from "./TwentyFortyEight";
 import { Snake } from "./Snake";
 import { FlappyBird } from "./FlappyBird";
+import { SpaceInvaders } from "./SpaceInvaders";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/2048" element={<TwentyFortyEight />} />
           <Route path="/snake" element={<Snake />} />
           <Route path="/flappybird" element={<FlappyBird />} />
+          <Route path="/spaceinvaders" element={<SpaceInvaders />} />
         </Routes>
       </BrowserRouter>
     </>
