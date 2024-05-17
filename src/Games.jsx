@@ -6,6 +6,7 @@ import invader from "./Assets/invader.png";
 import twen from "./Assets/2048.png";
 import connect from "./Assets/connect4.png";
 import sud from "./Assets/sudoku.png";
+import snek from "./Assets/snake.png";
 
 export function Games() {
   return (
@@ -84,7 +85,7 @@ export function Games() {
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Snake</p>
           <a href="/snake">
-            <img className="h-60 w-auto mx-auto pb-5" />
+            <img src={snek} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
 
