@@ -5,9 +5,10 @@ import { Roshambo } from "./Roshambo";
 import { TicTacToe } from "./TicTacToe";
 import { GuessNum } from "./GuessNum";
 import { TwentyFortyEight } from "./TwentyFortyEight";
-import { Snake } from "./Snake";
-import { FlappyBird } from "./FlappyBird";
-import { SpaceInvaders } from "./SpaceInvaders";
+import { MatchEmUp } from "./MatchEmUp";
+import { SimonSays } from "./SimonSays";
+import { WhackAMole } from "./WhackAMole";
+import { Connect } from "./Connect";
 
 function App() {
   return (
@@ -20,9 +21,10 @@ function App() {
           <Route path="/tictactoe" element={<TicTacToe />} />
           <Route path="/guessthenumber" element={<GuessNum />} />
           <Route path="/2048" element={<TwentyFortyEight />} />
-          <Route path="/snake" element={<Snake />} />
-          <Route path="/flappybird" element={<FlappyBird />} />
-          <Route path="/spaceinvaders" element={<SpaceInvaders />} />
+          <Route path="/matchemup" element={<MatchEmUp />} />
+          <Route path="/simonsays" element={<SimonSays />} />
+          <Route path="/whackamole" element={<WhackAMole />} />
+          <Route path="/connect" element={<Connect />} />
         </Routes>
       </BrowserRouter>
     </>
