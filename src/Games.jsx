@@ -6,7 +6,6 @@ import connect from "./Assets/connect4.png";
 import sud from "./Assets/sudoku.png";
 import wam from "./Assets/WHACKAMOLE.png";
 import meu from "./Assets/matchemup.png";
-import simon from "./Assets/simonsays.png";
 
 export function Games() {
   return (
@@ -36,7 +35,7 @@ export function Games() {
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
           <p className="text-2xl font-black pt-5 pb-5">Sudoku</p>
-          <a href="">
+          <a href="/sudoku">
             <img src={sud} className="h-60 w-auto mx-auto pb-5" />
           </a>
         </div>
@@ -62,9 +61,9 @@ export function Games() {
         </div>
 
         <div className="border-red-400 bg-white border-8 rounded-xl w-[25rem] h-[25rem] mx-auto">
-          <p className="text-2xl font-black pt-5 pb-5">Simon Says</p>
-          <a href="/simonsays">
-            <img className="h-60 w-auto mx-auto pb-5" src={simon} />
+          <p className="text-2xl font-black pt-5 pb-5">Hangman</p>
+          <a href="/hangman">
+            <img className="h-60 w-auto mx-auto pb-5" src={meu} />
           </a>
         </div>
 
