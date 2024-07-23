@@ -3,11 +3,62 @@ import { useState, useEffect } from "react";
 export function Hangman() {
   const words = ["escape", "slide", "banana", "love", "beauty", "laser", "monkey", "juice", "indoor", "charge"];
   const [word, setWord] = useState("");
-  const maxAttempts = 10;
+  const maxAttempts = 6;
   const [attempts, setAttempts] = useState(0);
   const [guessedLetters, setGuessedLetters] = useState([]);
-
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
+
+  const hangmanAscii = [
+    `+---+
+     |   |
+     |
+     |
+     |
+     |
+    =========`,
+    `+---+
+     |    |
+     |    0
+     |
+     |
+     |
+    =========`,
+    `+---+
+     |    |
+     |    O
+     |    |
+     |
+     |
+    =========`,
+    ` +---+
+      |    |
+      O    |
+    /|     |
+           |
+           |
+    =========`,
+    ` +---+
+      |    |
+      O    |
+    /|\\   |
+          |
+          |
+    =========`,
+    ` +---+
+      |    |
+      O    |
+    /|\\   |
+    /     |
+          |
+    =========`,
+    ` +---+
+      |    |
+      O    |
+    /|\\   |
+    / \\   |
+          |
+    =========`,
+  ];
 
   const handleGuess = (letter) => {
     if (guessedLetters.includes(letter)) {
@@ -58,7 +109,8 @@ export function Hangman() {
           <a href="/games">Home</a>
         </p>
         <p className="text-center font-black text-5xl text-zinc-950">Hangman</p>
-        <div className=" mt-20 flex flex-col items-center justify-center">
+        <div className="mt-20 flex flex-col items-center justify-center">
+          <pre className="mb-10 text-2xl whitespace-pre-line">{hangmanAscii[attempts]}</pre>
           <div className="mb-10">{renderWord()}</div>
           <div>
             {isGameOver && <p className="text-red-600 font-bold">Game Over! The word was {word}.</p>}

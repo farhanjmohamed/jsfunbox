@@ -22,7 +22,6 @@ export function TicTacToe() {
 
   useEffect(() => {
     checkWinner();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [options]);
 
   const handleCellClick = (index) => {
@@ -38,11 +37,7 @@ export function TicTacToe() {
 
     for (let i = 0; i < winConditions.length; i++) {
       const [a, b, c] = winConditions[i];
-      if (
-        options[a] &&
-        options[a] === options[b] &&
-        options[a] === options[c]
-      ) {
+      if (options[a] && options[a] === options[b] && options[a] === options[c]) {
         roundWon = true;
         break;
       }
@@ -75,13 +70,8 @@ export function TicTacToe() {
       <a className="text-2xl font-black text-white pl-2" href="/games">
         Home
       </a>
-      <div className="text-center font-black text-white text-[10rem] mt-10">
-        Tic Tac Toe
-      </div>
-      <div
-        id="statusText"
-        className="text-center text-white mt-14 font-bold text-4xl"
-      >
+      <div className="text-center font-black text-white text-[10rem] mt-10">Tic Tac Toe</div>
+      <div id="statusText" className="text-center text-white mt-14 font-bold text-4xl">
         {status}
       </div>
       {firstPickClicked || turnCount > 0 ? (
