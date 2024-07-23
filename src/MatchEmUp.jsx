@@ -55,7 +55,7 @@ export function MatchEmUp() {
   return (
     <>
       <div className="w-screen h-auto min-h-screen bg-gray-300">
-        <a href="/games" className="font-black text-4xl pl-5  text-gray-50">
+        <a href="/games" className="font-black text-4xl pl-5 text-blue-600">
           Home
         </a>
         <p className="text-center font-bold text-5xl pb-10 pt-5 text-blue-600">Match Em Up</p>
@@ -63,7 +63,7 @@ export function MatchEmUp() {
           {cards.map((card) => (
             <div
               key={card.id}
-              className={`w-24 h-24 flex items-center justify-center bg-white rounded-lg shadow-md cursor-pointer ${
+              className={`w-24 h-24 flex items-center justify-center rounded-lg shadow-md cursor-pointer ${
                 selectedCards.includes(card) || card.matched ? "bg-green-500" : "bg-blue-500"
               }`}
               onClick={() => handleCardClick(card)}
