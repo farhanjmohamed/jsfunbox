@@ -10,54 +10,54 @@ export function Hangman() {
 
   const hangmanAscii = [
     `+---+
-     |   |
-     |
-     |
-     |
-     |
-    =========`,
+    |   |
+        |
+        |
+        |
+        |
+  =========`,
     `+---+
-     |    |
-     |    0
-     |
-     |
-     |
-    =========`,
+    |   |
+    0   |
+        |
+        |
+        |
+  =========`,
     `+---+
-     |    |
-     |    O
-     |    |
-     |
-     |
-    =========`,
-    ` +---+
-      |    |
-      O    |
-    /|     |
-           |
-           |
-    =========`,
-    ` +---+
-      |    |
-      O    |
-    /|\\   |
-          |
-          |
-    =========`,
-    ` +---+
-      |    |
-      O    |
-    /|\\   |
-    /     |
-          |
-    =========`,
-    ` +---+
-      |    |
-      O    |
-    /|\\   |
-    / \\   |
-          |
-    =========`,
+    |   |
+    O   |
+    |   |
+        |
+        |
+  =========`,
+    `+---+
+    |   |
+    O   |
+   /|   |
+        |
+        |
+  =========`,
+    `+---+
+    |   |
+    O   |
+   /|\\  |
+        |
+        |
+  =========`,
+    `+---+
+    |   |
+    O   |
+   /|\\  |
+   /    |
+        |
+  =========`,
+    `+---+
+    |   |
+    O   |
+   /|\\  |
+   / \\  |
+        |
+  =========`,
   ];
 
   const handleGuess = (letter) => {
@@ -80,18 +80,27 @@ export function Hangman() {
   };
 
   const renderButtons = () => {
-    return alphabet.map((letter) => (
-      <button
-        key={letter}
-        onClick={() => handleGuess(letter)}
-        className={`m-1 p-2 rounded-md ${
-          guessedLetters.includes(letter) ? "bg-red-600 text-white" : "bg-zinc-800 text-white"
-        }`}
-        disabled={guessedLetters.includes(letter) || isGameOver || isGameWon}
-      >
-        {letter.toUpperCase()}
-      </button>
-    ));
+    return alphabet.map((letter) => {
+      let bgColor = "bg-gray-100 text-zinc-800";
+      if (guessedLetters.includes(letter)) {
+        if (word.includes(letter)) {
+          bgColor = "bg-green-500 text-white";
+        } else {
+          bgColor = "bg-zinc-800 text-white";
+        }
+      }
+
+      return (
+        <button
+          key={letter}
+          onClick={() => handleGuess(letter)}
+          className={`m-1 p-2 rounded-md ${bgColor}`}
+          disabled={guessedLetters.includes(letter) || isGameOver || isGameWon}
+        >
+          {letter.toUpperCase()}
+        </button>
+      );
+    });
   };
 
   const isGameOver = attempts >= maxAttempts;
