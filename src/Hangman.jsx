@@ -9,55 +9,55 @@ export function Hangman() {
   const alphabet = "abcdefghijklmnopqrstuvwxyz".split("");
 
   const hangmanAscii = [
-    `+---+
-    |   |
-        |
-        |
-        |
-        |
-  =========`,
-    `+---+
-    |   |
-    0   |
-        |
-        |
-        |
-  =========`,
-    `+---+
-    |   |
-    O   |
-    |   |
-        |
-        |
-  =========`,
-    `+---+
-    |   |
-    O   |
-   /|   |
-        |
-        |
-  =========`,
-    `+---+
-    |   |
-    O   |
-   /|\\  |
-        |
-        |
-  =========`,
-    `+---+
-    |   |
-    O   |
-   /|\\  |
-   /    |
-        |
-  =========`,
-    `+---+
-    |   |
-    O   |
-   /|\\  |
-   / \\  |
-        |
-  =========`,
+    `+----------+
+ |         |
+           |
+           |
+           |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+           |
+           |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+ |         |
+           |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+/|         |
+           |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+/|\\        |
+           |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+/|\\        |
+/          |
+           |
+  ==========`,
+    `+----------+
+ |         |
+ O         |
+/|\\        |
+/ \\        |
+           |
+  ==========`,
   ];
 
   const handleGuess = (letter) => {
@@ -119,7 +119,7 @@ export function Hangman() {
         </p>
         <p className="text-center font-black text-5xl text-zinc-950">Hangman</p>
         <div className="mt-20 flex flex-col items-center justify-center">
-          <pre className="mb-10 text-2xl whitespace-pre-line">{hangmanAscii[attempts]}</pre>
+          <pre className="mb-10 text-2xl whitespace-pre">{hangmanAscii[attempts]}</pre>
           <div className="mb-10">{renderWord()}</div>
           <div>
             {isGameOver && <p className="text-red-600 font-bold">Game Over! The word was {word}.</p>}
